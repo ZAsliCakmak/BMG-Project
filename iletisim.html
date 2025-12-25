@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim - Lezzet Durağı</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14" fill="#E8B4B8" />
+            <path
+              d="M16 8C12.5 8 10 10.5 10 14C10 17.5 12.5 20 16 20C19.5 20 22 17.5 22 14C22 10.5 19.5 8 16 8Z"
+              fill="#fff"
+            />
+            <circle cx="16" cy="22" r="2" fill="#E8B4B8" />
+          </svg>
+          <span class="brand-name">Lezzet Durağı</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="tarifler.html">Tarifler</a></li>
+          <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Bizimle İletişime Geçin</h1>
+        <p class="page-subtitle">
+          Sorularınız, önerileriniz ve tarif istekleriniz için buradayız
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-form-container">
+            <h2>Mesaj Gönderin</h2>
+            <p>
+              Aklınıza takılan bir soru mu var? Bize ulaşın, en kısa sürede size
+              dönüş yapalım.
+            </p>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Adınız Soyadınız</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Örn: Ayşe Yılmaz"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">E-posta Adresiniz</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="ornek@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Konu</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Konu seçin</option>
+                  <option value="tarif">Tarif Önerisi</option>
+                  <option value="soru">Genel Soru</option>
+                  <option value="isbirligi">İş Birliği</option>
+                  <option value="sikayet">Şikayet/Öneri</option>
+                  <option value="diger">Diğer</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Mesajınızı buraya yazın..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Gönder
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info-container">
+            <h2>İletişim Bilgileri</h2>
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>E-posta</h3>
+                <p>info@lezzetduragi.com</p>
+                <p>destek@lezzetduragi.com</p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h3>Telefon</h3>
+                <p>+90 555 123 4567</p>
+                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Adres</h3>
+                <p>Kadıköy Moda Caddesi</p>
+                <p>No: 123, İstanbul, Türkiye</p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">🌐</div>
+                <h3>Sosyal Medya</h3>
+                <div class="social-links-vertical">
+                  <a href="#">Instagram</a>
+                  <a href="#">Facebook</a>
+                  <a href="#">YouTube</a>
+                  <a href="#">Twitter</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-hours">
+              <h3>Çalışma Saatleri</h3>
+              <div class="hours-grid">
+                <div class="hour-item">
+                  <span>Pazartesi - Cuma</span>
+                  <span>09:00 - 18:00</span>
+                </div>
+                <div class="hour-item">
+                  <span>Cumartesi</span>
+                  <span>10:00 - 16:00</span>
+                </div>
+                <div class="hour-item">
+                  <span>Pazar</span>
+                  <span>Kapalı</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Tarifleri nereden buluyorsunuz?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tariflerimiz, profesyonel şeflerimiz tarafından geliştiriliyor
+                ve mutfağımızda defalarca test ediliyor. Ayrıca
+                kullanıcılarımızın önerileri ve geleneksel Türk mutfağından
+                esinleniyoruz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Tarif önerisinde bulunabilir miyim?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Elbette! Tarif önerilerinizi yukarıdaki iletişim formunu
+                kullanarak veya sosyal medya hesaplarımız üzerinden bizimle
+                paylaşabilirsiniz. Tüm önerileri değerlendiriyor ve uygun
+                olanları sitemize ekliyoruz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Tariflerdeki malzemeler yerine başka şeyler kullanabilir
+                miyim?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Birçok tarifimizde alternatif malzeme önerileri bulunmaktadır.
+                Ancak bazı tariflerde belirli malzemeler yemeğin temel lezzetini
+                oluşturur. Her tarif sayfasında alternatifler hakkında bilgi
+                vermeye çalışıyoruz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Tarifleriniz kaç kişilik?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tariflerimiz genellikle 4-6 kişilik porsiyonlar için
+                hazırlanmıştır. Her tarif sayfasında porsiyon bilgisi belirtilir
+                ve malzeme miktarlarını ihtiyacınıza göre artırıp
+                azaltabilirsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Bülteninize nasıl abone olabilirim?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ana sayfamızın alt kısmında bulunan bülten kayıt formunu
+                kullanarak abone olabilirsiniz. Haftalık olarak yeni tarifler,
+                mutfak ipuçları ve özel teklifler hakkında bilgi alırsınız.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">Konumumuz</h2>
+        <div class="map-placeholder">
+          <div class="map-overlay">
+            <div class="map-info">
+              <h3>📍 Lezzet Durağı Merkez Ofis</h3>
+              <p>Kadıköy Moda Caddesi No: 123</p>
+              <p>İstanbul, Türkiye</p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="btn btn-secondary"
+              >
+                Haritada Gör
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-brand">
+              <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="14" fill="#E8B4B8" />
+                <path
+                  d="M16 8C12.5 8 10 10.5 10 14C10 17.5 12.5 20 16 20C19.5 20 22 17.5 22 14C22 10.5 19.5 8 16 8Z"
+                  fill="#fff"
+                />
+                <circle cx="16" cy="22" r="2" fill="#E8B4B8" />
+              </svg>
+              <h3>Lezzet Durağı</h3>
+            </div>
+            <p>
+              Mutfağınızı lezzet cennetine dönüştüren tarifler. Her gün yeni bir
+              tat keşfedin.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Facebook">👍</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="YouTube">📺</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="tarifler.html">Tarifler</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="#">Hakkımızda</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Kategoriler</h4>
+            <ul>
+              <li><a href="tarifler.html">Tatlılar</a></li>
+              <li><a href="tarifler.html">Ana Yemekler</a></li>
+              <li><a href="tarifler.html">Salatalar</a></li>
+              <li><a href="tarifler.html">Çorbalar</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>İletişim</h4>
+            <ul>
+              <li>📧 info@lezzetduragi.com</li>
+              <li>📱 +90 555 123 4567</li>
+              <li>📍 İstanbul, Türkiye</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
